@@ -61,9 +61,6 @@ public class LoggingAspect {
     }
 
     private void logWithLevel(String message, Object... args) {
-        if (!properties.isEnabled()) {
-            return;
-        }
 
         switch (properties.getLevel()) {
             case DEBUG -> log.debug(message, args);
