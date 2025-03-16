@@ -1,0 +1,10 @@
+spring:
+  aop:
+    auto: true
+  application:
+    name: starter
+
+logging:
+  http:
+    enabled: true
+    level: INFO
